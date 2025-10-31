@@ -1,0 +1,43 @@
+/* sumsung */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;/* Adjust height */
+    overflow: hidden;
+  }
+  
+  .slider .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .slider video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire slide */
+  }
+  #card-heading{
+    font-size: 50px;
+   
+    text-align: center;
+    font-weight: bold;
+    background-color:  hsl(249, 71%, 30%);
+    color: rgb(229, 214, 214);
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 15px;
+    
+  }
+  
+  #card-heading:hover{
+    background-color: black;
+    transform: scale(0.9);
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+  }
+/* SUMSUNG END */
+.n1{
+ margin-left: 6%;
+}

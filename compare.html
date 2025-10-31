@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymou">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/compare.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgb(1, 18, 40);">
+          <div class="container-fluid navbar2">
+            <a class="navbar-brand" href="#"><img src="/assets/images/logo0.png" alt="" height="50px" class="img"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="dropbtn" style="font-weight: bolder;">Brands</button>
+                    <div class="dropdown-content">
+                      <a href="/LG.html">LG</a>
+                      <a href="/Gree.html">Gree</a>
+                      <a href="/haier.html">Haier</a>
+                      <a href="/sumsung.html">Sumsung</a>
+                      <a href="/Dawnlance.html">Dawnlance</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown " >
+                    <button class="dropbtn" style="font-weight: bolder;">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="/Ac.html">AC</a>
+                        <a href="/lcd.html">LCDs</a>
+                        <a href="/oven.html">Ovens</a>
+                        <a href="/refrigerator.html">Refrigerators</a>
+                        <a href="/WaMa.html">Washing Machine</a>
+                    </div>
+                </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <button class="btn btn-success" type="submit"><a href="login.html"
+                    class="text-decoration-none text-light">Sign Up</a></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div><br><br><br>
+
+<!-- COMPARE  -->
+
+<section>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Compare Products</h2>
+        
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="product1" class="form-label">Select First Product:</label>
+                <select id="product1" class="form-select">
+                    <option value="">Select Product</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="product2" class="form-label">Select Second Product:</label>
+                <select id="product2" class="form-select">
+                    <option value="">Select Product</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="btn" onclick="compareProducts()" style="background-color: #ff3c78; color: white;">Compare</button>
+
+        <div id="comparisonResult" class="mt-4 row"></div>
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-container container">
+            <div class="content_1">
+                <p>
+                <h1 style="color: white; ">LA-IMPERIAL</h1>
+                </p>
+                <p>The customer is at the heart of our<br>unique business model, which includes<br>design.</p>
+                <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards">
+            </div>
+            <div class="content_2">
+                <h4>BRANDS</h4>
+                <a href="#sellers">LG</a>
+                <a href="#sellers">GREE</a>
+                <a href="#sellers">HAIER</a>
+                <a href="#sellers">SAMSUNG</a>
+                <a href="#sellers">DAWNLANCE</a>
+            </div>
+            <div class="content_3">
+                <h4>APPLIANCES</h4>
+                <a href="/Ac.html">AC</a>
+                <a href="/lcd.html">LCDs</a>
+                <a href="/oven.html">OVENS</a>
+                <a href="/refrigerator.html">REFRIGERATORS</a>
+                <a href="/WaMa.html">WASHING MACHINES</a>
+            </div>
+            <div class="content_4">
+                <h4>EMAIL NOW</h4>
+                <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+                <div class="f-mail">
+                    <input type="email" placeholder="Your Email">
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <hr>
+                <a href="/aboutus.html" style="font-size: 25px;">ABOUT US</a>
+            </div>
+        </div>
+        <div class="f-design">
+            <div class="f-design-txt container">
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                    © 2021 Copyright:
+                    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">LA-IMPERIAL.COM</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/javascript/compare.js"></script>
+</body>
+</html>
